@@ -39,9 +39,9 @@ spec:
       url: https://github.com/dipalpat/java-rest-service
       ref:
         branch: main
-  # serviceClaims:
-  #   - name: database
-  #     ref:
-  #       apiVersion: services.apps.tanzu.vmware.com/v1alpha1
-  #       kind: ResourceClaim
-  #       name: customer-database
+  serviceClaims:
+    - name: database
+      ref:
+        apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+        kind: ResourceClaim
+        name: customer-database
