@@ -1,5 +1,6 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
+namespace: dev-space
 metadata:
   name: customer-profile
   labels:
