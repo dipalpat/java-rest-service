@@ -8,7 +8,6 @@ metadata:
     apps.tanzu.vmware.com/has-tests: "true"
     apis.apps.tanzu.vmware.com/register-api: "true"
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
-    apps.tanzu.vmware.com/pipeline:  test-java
 spec:
   build:
     env:
@@ -18,9 +17,9 @@ spec:
     - name: annotations
       value:
         autoscaling.knative.dev/minScale: "1"
-    - name: testing_pipeline_matching_labels
-      value:
-        apps.tanzu.vmware.com/pipeline: test-java
+    # - name: testing_pipeline_matching_labels
+    #   value:
+    #     apps.tanzu.vmware.com/pipeline: test-java
     - name: api_descriptor
       value:
         type: openapi
